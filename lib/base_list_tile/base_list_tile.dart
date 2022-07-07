@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 class BaseListTile extends StatelessWidget {
   const BaseListTile(
       {required this.title,
+      this.subtitle,
       this.isBorder = false,
       this.radius = BorderRadius.zero,
       this.leading,
@@ -23,6 +24,7 @@ class BaseListTile extends StatelessWidget {
       this.borderStyle = BorderStyle.solid});
 
   final Widget title;
+  final Widget? subtitle;
   final Widget? leading;
   final Widget? trailing;
   final bool isDense;
@@ -53,6 +55,7 @@ class BaseListTile extends StatelessWidget {
         elevation: elevation,
         child: ListTile(
             title: title,
+            subtitle: subtitle,
             leading: leading,
             trailing: trailing,
             dense: isDense,

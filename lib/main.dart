@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
                   title: Text('title'),
                   leading: Icon(Icons.home),
                   trailing: Icon(Icons.access_time),
+                  subtitle: Text('subtitle'),
                   isBorder: true,
                   radius: BorderRadius.circular(10),
                   borderColor: Colors.white,
